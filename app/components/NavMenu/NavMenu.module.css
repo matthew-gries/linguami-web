@@ -1,0 +1,32 @@
+
+.navMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: var(--background-secondary);
+    border-bottom: solid 1px #696868;
+}
+
+.navMenuContainer {
+    margin-top: 0;
+}
+
+.navMenuIcon {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navMenuIconText {    
+    font-family: cursive;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0.5em;
+}

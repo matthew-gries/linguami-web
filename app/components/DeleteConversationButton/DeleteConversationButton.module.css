@@ -1,0 +1,62 @@
+
+@keyframes dim-background-when-modal-opens {
+    from { background: rgba(0, 0, 0, 0); }
+    to { background: rgba(0, 0, 0, 0.8); }
+}
+
+.modalRoot {
+    margin-top: 0;
+}
+
+.modalButton {
+    padding: 2px 4px;
+    background: none;
+    border: none;
+    padding: 0;
+    outline: none;
+    box-shadow: none;
+    color: var(--foreground-primary)
+}
+
+.modalContent {
+    margin: auto;
+    padding: 4px 10px;
+    max-width: 80%;
+    min-width: 70%;
+    background-color: var(--background-primary);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modalWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    animation: dim-background-when-modal-opens;
+    animation-duration: 0.5s;
+    margin-top: 0;
+}
+
+.cancelButton {
+    margin-left: 1em;
+    margin-top: 0;
+}
+
+.modalTitle {
+    padding: 4px;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+

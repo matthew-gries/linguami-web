@@ -1,0 +1,22 @@
+.footer {
+    /* position: absolute; */
+    /* bottom: 0; */
+    background-color: var(--background-secondary);
+    border-top: solid 1px #696868;
+    width: 100%;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.link {
+    margin-top: 0;
+}
+
+.link + .link {
+    margin-left: 3em;
+}

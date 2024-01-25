@@ -1,0 +1,52 @@
+@keyframes conversation-list-appear {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes chat-appear {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+.chatList {
+    display: block;
+    background-color: var(--background-secondary);
+    border-radius: var(--border-radius);
+    list-style: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 85%;
+    height: 47vh;
+    padding: 1em;
+    margin-top: 0;
+    animation-name: conversation-list-appear;
+    animation-duration: 1s;
+}
+
+@media (min-height: 42em) {
+    .chatList {
+        height: 55vh;
+    }
+}
+
+@media (min-height: 51em) {
+    .chatList {
+        height: 60vh;
+    }
+}
+
+@media (min-height: 66em) {
+    .chatList {
+        height: 64vh;
+    }
+}
+
+.chat {
+    display: inline-block;
+    clear: both;
+    padding: 0.75em;
+    border-radius: var(--border-radius);
+    animation-name: chat-appear;
+    animation-duration: 0.5s;
+    color: white;
+}

@@ -1,0 +1,49 @@
+@keyframes item-appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.redirectPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.padText {
+  padding: 0.5em 1em;
+}
+
+.root {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  margin-top: 10vh;
+}
+
+.stickerItem {
+  animation-name: item-appear;
+  animation-duration: 1s;
+}
+
+.textItem {
+  animation-name: item-appear;
+  animation-duration: 1s;
+}
+
+@media (min-width: 60em) and (min-height: 32em) {
+  .root {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 2em;
+  }
+
+  .stickerItem {
+    grid-area: 1 / 1 / span 1 / span 1;
+  }
+  
+  .textItem {
+    grid-area: 2 / 2 / span 1 / span 1;
+  }
+}

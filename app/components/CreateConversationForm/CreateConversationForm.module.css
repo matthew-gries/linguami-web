@@ -1,0 +1,22 @@
+
+.formRoot {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.formLabel {
+    margin-top: 0;
+}
+
+.formInput {
+    margin-top: 1em;
+    margin-bottom: 14px;
+}
+
+.formSubmit {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,86 @@
+:root {
+  --max-width: 1440px;
+  --border-radius: 10px;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+
+  --foreground-primary: #2c2c2c;
+  --background-primary: #ecf3f4;
+  --background-secondary: #FFFFFF;
+
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-primary: #FFFFFF;
+    --background-primary: #222222;
+    --background-secondary: #161616;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  color: rgb(var(--foreground-primary));
+  background-color: var(--background-primary);
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+body * + * {
+  margin-top: 1.5em;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0;
+  flex: 1;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error > h2 {
+  padding: 1em;
+  text-align: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input[type="submit"] {
+  border: none;
+  background-color: var(--foreground-primary);
+  color: var(--background-primary);
+  padding: 6px 10px;
+  border-radius: var(--border-radius);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

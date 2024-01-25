@@ -1,0 +1,39 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownList {
+    margin-top: 0;
+}
+
+.dropdownButton {
+    background: none;
+    border: none;
+    padding: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+.profilePic {
+    border-radius: 50%;
+}
+
+.dropdownContent {
+    position: absolute;
+    top: calc(100% + 0.25rem);
+    right: calc(100% - 2.25rem);
+    background-color: var(--background-primary);
+    border-color: #696868;
+    border-width: 1px;
+    border-style: solid;
+    padding: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    z-index: 2;
+    border-radius: var(--border-radius);
+}
+
+.listItem {
+    list-style-type: none;
+}

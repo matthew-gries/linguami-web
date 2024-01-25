@@ -1,0 +1,14 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.header {
+    padding: 0.5em;
+    text-align: center;
+    max-height: fit-content;
+    max-width: fit-content;
+}
