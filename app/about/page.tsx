@@ -5,7 +5,7 @@ export default function About() {
     <div>
       <p className={styles.paragraph}>
         LinguAmi is a web app used to help with language learning utilizing large language models. It is inteded to be a supplementary resource
-        for practicing speaking and listening.
+        for practicing speaking and listening. LinguAmi is currently in beta, and new features are being added all the time.
       </p>
       <br />
       <p className={styles.paragraph}>

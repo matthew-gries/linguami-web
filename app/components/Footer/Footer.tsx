@@ -7,7 +7,7 @@ export function Footer() {
     <footer className={styles.footer}>
       <div className={styles.links}>
         <Link className={styles.link} href={'/about'}>About</Link>
-        <Link className={styles.link} href={'/#'}>Github</Link>
+        <Link className={styles.link} href={'https://github.com/matthew-gries/linguami-web'}>Github</Link>
       </div>
     </footer>
   );
