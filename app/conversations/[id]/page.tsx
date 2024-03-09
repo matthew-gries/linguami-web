@@ -1,7 +1,7 @@
 import CreateChatForm from "@/app/components/CreateChatForm";
 import ServerSideAuthCheck from "@/app/components/ServerSideAuthCheck";
 import { prisma } from "@/lib/prisma";
-import { Chat, ChatText, Conversation } from "@prisma/client";
+import { Chat, ChatText } from "@prisma/client";
 import styles from "./page.module.css";
 import ChatList from "@/app/components/ChatList";
 

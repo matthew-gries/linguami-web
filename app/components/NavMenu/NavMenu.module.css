@@ -6,6 +6,7 @@
     padding: 1em;
     background-color: var(--background-secondary);
     border-bottom: solid 1px #696868;
+    width: 100%;
 }
 
 .navMenuContainer {
